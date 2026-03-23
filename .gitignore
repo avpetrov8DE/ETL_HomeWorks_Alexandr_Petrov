@@ -1,0 +1,7 @@
+﻿logs/
+.env
+config/
+plugins/
+postgres-db-volume/
+__pycache__/
+*.pyc
