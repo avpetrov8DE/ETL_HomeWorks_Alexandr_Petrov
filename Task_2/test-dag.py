@@ -8,7 +8,7 @@ from airflow.providers.yandex.operators.yandexcloud_dataproc import (
     DataprocDeleteClusterOperator,
 )
 
-# Данные вашей инфраструктуры
+# Данные инфраструктуры
 YC_DP_AZ = 'ru-central1-a'
 YC_DP_SSH_PUBLIC_KEY = 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOUPanNw+kacwCOobhHCBjR0qt4JsKXTkWo0lZf7ChOV/hEs5aFJBHe+h1isKYXrzM+XEfYoF74JbLoGasgU1llkofQ9OWsbKHAc01nQELc8nfcsjxYe6qjY3seGl3Fyh/5et7+9Us0VBCwRfnzdzW681oWioGOOBQ7kS2zrnfF4sVESeUihfpYtwsxcqwN9m2r804AqvwVveF028vwANDm8tsxc7fb0W4yd6S7wBPxCbxoArLSz3WtUxb9R+f/jwIxLPTkFFUHtF688qB8lTU71knLix9EZH7OAuBVTOTlONxWRXuXdMOxdEufGTeU8KGlJwSVGe275R3gA5xh2xL pc@DESKTOP-GG37PUM'
 YC_DP_SUBNET_ID = 'e9b4i08jasss86e5mqpo'
