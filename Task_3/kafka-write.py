@@ -35,7 +35,6 @@ def main():
             "decision_status": random.choice(["approved", "manual_review", "rejected"]),
             "submitted_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
         }
-        # Кафка принимает данные в формате строки JSON
         raw_records.append(json.dumps(record))
 
     # Переводим массив строк в Spark DataFrame в колонку "value"
