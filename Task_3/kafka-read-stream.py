@@ -63,7 +63,7 @@ def main():
             col("submitted_at")
         )
 
-    # Сохраняем в папку kafka-read-stream-output, как просит пункт 11 инструкции
+    # Сохраняем в папку kafka-read-stream-output
     query = flat_stream_df.writeStream \
         .format("parquet") \
         .option("path", f"s3a://{BUCKET_NAME}/kafka-read-stream-output") \
