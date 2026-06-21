@@ -25,7 +25,7 @@ schema = StructType([
     StructField('processing_time_sec', IntegerType(), True)
 ])
 
-# Пути к данным внутри вашего бакета
+# Пути к данным внутри бакета
 INPUT_CSV_PATH = "s3a://etl-dataproc-bucket-1/input/loan_applications.csv"
 OUTPUT_TABLE_PATH = "s3a://etl-dataproc-bucket-1/loan_applications_table"
 
@@ -36,7 +36,7 @@ df = spark.read.format("csv") \
     .load(INPUT_CSV_PATH)
 
 # 4. Запись данных в Hive Metastore под именем loan_applications
-# Физические данные будут сохранены в оптимизированном формате Parquet по указанному пути
+# Физические данные будут сохранены в формате Parquet по указанному пути
 df.write \
     .mode("overwrite") \
     .option("path", OUTPUT_TABLE_PATH) \
